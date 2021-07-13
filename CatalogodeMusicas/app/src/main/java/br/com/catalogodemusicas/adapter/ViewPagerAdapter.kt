@@ -1,4 +1,4 @@
-package br.com.catalogodemusicas
+package br.com.catalogodemusicas.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

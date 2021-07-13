@@ -1,8 +1,12 @@
-package br.com.catalogodemusicas
+package br.com.catalogodemusicas.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.catalogodemusicas.adapter.ViewPagerAdapterActivity
 import br.com.catalogodemusicas.databinding.ActivityMainBinding
+import br.com.catalogodemusicas.fragment.AlbumPagerFragment
+import br.com.catalogodemusicas.fragment.ImagePagerFragment
+import br.com.catalogodemusicas.fragment.MusicFragment
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {

@@ -1,10 +1,13 @@
-package br.com.catalogodemusicas
+package br.com.catalogodemusicas.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import br.com.catalogodemusicas.transformer.DepthPageTransformer
+import br.com.catalogodemusicas.R
+import br.com.catalogodemusicas.adapter.ViewPagerAdapterFragment
 import br.com.catalogodemusicas.databinding.FragmentAlbumPagerBinding
 
 class AlbumPagerFragment : Fragment() {

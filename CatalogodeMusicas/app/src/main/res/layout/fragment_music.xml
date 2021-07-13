@@ -4,103 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MusicFragment">
+    tools:context=".fragment.MusicFragment">
 
-    <TextView
-        android:id="@+id/nomeMusica1"
-        android:text="In the End"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vgMusicRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05" />
-
-    <TextView
-        android:id="@+id/nomeBanda1"
-        android:text="Linkin Park"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nomeMusica1"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica1" />
-
-    <TextView
-        android:id="@+id/nomeMusica2"
-        android:text="Wild Horses"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/nomeBanda1"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica1" />
-
-    <TextView
-        android:id="@+id/nomeBanda2"
-        android:text="Rolling Stones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nomeMusica2"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica2" />
-
-    <TextView
-        android:id="@+id/nomeMusica3"
-        android:text="Starway to Heaven"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/nomeBanda2"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica2" />
-
-    <TextView
-        android:id="@+id/nomeBanda3"
-        android:text="Led Zepellin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nomeMusica3"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica3" />
-
-    <TextView
-        android:id="@+id/nomeMusica4"
-        android:text="Back in Black"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/nomeBanda3"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica3" />
-
-    <TextView
-        android:id="@+id/nomeBanda4"
-        android:text="AC/DC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nomeMusica4"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica4" />
-
-    <TextView
-        android:id="@+id/nomeMusica5"
-        android:text="Nothing Else Matters"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/nomeBanda4"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica4" />
-
-    <TextView
-        android:id="@+id/nomeBanda5"
-        android:text="Metallica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nomeMusica5"
-        app:layout_constraintStart_toStartOf="@id/nomeMusica5" />
+        tools:listitem="@layout/music_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
