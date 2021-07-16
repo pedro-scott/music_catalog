@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.catalogodemusicas.R
 import br.com.catalogodemusicas.adapter.MusicAdapter
 import br.com.catalogodemusicas.databinding.FragmentMusicBinding
-import br.com.catalogodemusicas.databinding.MusicItemBinding
 import br.com.catalogodemusicas.model.Music
 
 class MusicFragment : Fragment() {
@@ -67,7 +66,19 @@ class MusicFragment : Fragment() {
                 album = "Metallica"
             )
         )
-        val musicAdapter = MusicAdapter(musicList)
+        val musicAdapter = MusicAdapter(musicList) {
+            if (it.layoutInfo.isVisible) {
+                it.layoutInfo.apply {
+                    visibility = View.GONE
+                    isVisible = false
+                }
+            } else {
+                it.layoutInfo.apply {
+                    visibility = View.VISIBLE
+                    isVisible = true
+                }
+            }
+        }
 
         binding?.let {
             with(it) {
