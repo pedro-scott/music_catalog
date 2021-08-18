@@ -6,7 +6,7 @@ Durante o curso Mobile Android 2021, da Digital House Brasil, foi proposto o des
    2. Imagens - que contém imagens das bandas e/ou artistas das músicas escolhidas
    3. Álbuns - que contém imagem, nome e ano de lançamento dos álbuns que as músicas fazem parte
  
- ## Demonstração do Aplicativo
+ <br/><br/>
 
 <p align="center">
    <img src="https://github.com/pedro-scott/music_catalog/blob/main/music_catalog_app.gif">
